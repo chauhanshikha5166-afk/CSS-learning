@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    margin: 0;
+    padding: 50px;
+}
+
+.profile {
+    background-color: white;
+    width: 550px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #d5d9df;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #666666;
+    font-size: 17px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+p {
+    color: #444444;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.learning-box {
+    background-color: #f5f6f8;
+    padding: 15px;
+    border-left: 4px solid #555555;
+    margin-top: 10px;
+}
+
+.learning-box p {
+    margin: 8px 0;
+}
