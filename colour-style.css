@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ed;
+    margin: 0;
+    padding: 40px;
+    color: #333333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666666;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.upload-section {
+    text-align: center;
+}
+
+.upload-box {
+    display: inline-block;
+    background-color: #333333;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+#photo {
+    display: none;
+}
+
+.note {
+    font-size: 13px;
+    color: #777777;
+}
+
+.tones {
+    display: flex;
+    gap: 20px;
+}
+
+.tone {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.tone-color {
+    height: 70px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.tone-one {
+    background-color: #f1d2bd;
+}
+
+.tone-two {
+    background-color: #c58f6c;
+}
+
+.tone-three {
+    background-color: #70452f;
+}
+
+.tone h3 {
+    margin: 5px;
+}
+
+.tone p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.color-card {
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.color {
+    height: 60px;
+    border-radius: 5px;
+}
+
+.beige {
+    background-color: #d8c3a5;
+}
+
+.olive {
+    background-color: #6b705c;
+}
+
+.navy {
+    background-color: #243447;
+}
+
+.burgundy {
+    background-color: #7b2638;
+}
+
+.teal {
+    background-color: #408080;
+}
+
+.brown {
+    background-color: #795548;
+}
+
+.color-card p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+}
