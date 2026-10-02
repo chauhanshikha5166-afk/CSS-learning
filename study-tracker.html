@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudyMate - Smart Study Tracker</title>
+    <link rel="stylesheet" href="study-style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>StudyMate</h1>
+            <p>Plan. Learn. Revise. Test.</p>
+        </div>
+
+        <nav>
+            <a href="#planner">Study Planner</a>
+            <a href="#resources">Resources</a>
+            <a href="#revision">Revision</a>
+            <a href="#test">Quick Test</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Study Planner -->
+
+        <section id="planner" class="section">
+
+            <div class="section-heading">
+                <p class="label">STEP 01</p>
+                <h2>Create Your Study Plan</h2>
+                <p>
+                    Enter your subject and topic to prepare a focused
+                    study session.
+                </p>
+            </div>
+
+            <div class="planner-box">
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+
+                    <select id="subject">
+                        <option>Select Subject</option>
+                        <option>Data Structures</option>
+                        <option>DBMS</option>
+                        <option>Operating System</option>
+                        <option>Computer Networks</option>
+                        <option>Web Development</option>
+                    </select>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="topic">Topic</label>
+
+                    <input
+                        type="text"
+                        id="topic"
+                        placeholder="Example: Binary Search Tree">
+                </div>
+
+
+                <div class="input-group">
+                    <label for="exam">Preparation For</label>
+
+                    <select id="exam">
+                        <option>Select Exam</option>
+                        <option>University Exam</option>
+                        <option>Placement Preparation</option>
+                        <option>Competitive Exam</option>
+                    </select>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="time">Available Time</label>
+
+                    <select id="time">
+                        <option>15 Minutes</option>
+                        <option>30 Minutes</option>
+                        <option>45 Minutes</option>
+                        <option>1 Hour</option>
+                    </select>
+                </div>
+
+                <button class="primary-button">
+                    Create Study Plan
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recommended Resources -->
+
+        <section id="resources" class="section">
+
+            <div class="section-heading">
+                <p class="label">STEP 02</p>
+
+                <h2>Recommended Study Material</h2>
+
+                <p>
+                    A short learning path can help you focus on the
+                    important parts of a topic.
+                </p>
+            </div>
+
+
+            <div class="resource-grid">
+
+                <div class="resource-card">
+
+                    <span class="resource-type">LECTURE</span>
+
+                    <h3>Concept Explanation</h3>
+
+                    <p>
+                        Watch a short lecture covering the basic
+                        concept and important terminology.
+                    </p>
+
+                    <div class="card-footer">
+                        <span>20–30 min</span>
+                        <a href="#">View Lecture</a>
+                    </div>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <span class="resource-type">NOTES</span>
+
+                    <h3>Quick Revision Notes</h3>
+
+                    <p>
+                        Read important definitions, concepts,
+                        properties and examples.
+                    </p>
+
+                    <div class="card-footer">
+                        <span>10 min</span>
+                        <a href="#">Read Notes</a>
+                    </div>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <span class="resource-type">PRACTICE</span>
+
+                    <h3>Important Questions</h3>
+
+                    <p>
+                        Practice frequently asked questions and
+                        exam-oriented problems.
+                    </p>
+
+                    <div class="card-footer">
+                        <span>15 min</span>
+                        <a href="#">Practice</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Revision Plan -->
+
+        <section id="revision" class="section">
+
+            <div class="section-heading">
+                <p class="label">STEP 03</p>
+
+                <h2>Quick Revision</h2>
+
+                <p>
+                    Revise the topic in a short sequence before
+                    attempting the test.
+                </p>
+            </div>
+
+
+            <div class="revision-list">
+
+                <div class="revision-item">
+                    <div class="number">01</div>
+
+                    <div>
+                        <h3>Understand the Concept</h3>
+
+                        <p>
+                            Focus on the basic idea, definition and
+                            working of the topic.
+                        </p>
+                    </div>
+
+                    <span>10 min</span>
+                </div>
+
+
+                <div class="revision-item">
+                    <div class="number">02</div>
+
+                    <div>
+                        <h3>Remember Key Points</h3>
+
+                        <p>
+                            Revise important terms, formulas,
+                            steps and differences.
+                        </p>
+                    </div>
+
+                    <span>5 min</span>
+                </div>
+
+
+                <div class="revision-item">
+                    <div class="number">03</div>
+
+                    <div>
+                        <h3>Practice Examples</h3>
+
+                        <p>
+                            Solve a few examples to check whether
+                            you understood the concept.
+                        </p>
+                    </div>
+
+                    <span>10 min</span>
+                </div>
+
+
+                <div class="revision-item">
+                    <div class="number">04</div>
+
+                    <div>
+                        <h3>Take the Quick Test</h3>
+
+                        <p>
+                            Answer MCQs and short questions without
+                            looking at your notes.
+                        </p>
+                    </div>
+
+                    <span>5 min</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Test -->
+
+        <section id="test" class="section">
+
+            <div class="section-heading">
+                <p class="label">STEP 04</p>
+
+                <h2>Quick Knowledge Check</h2>
+
+                <p>
+                    Test yourself after completing the revision.
+                </p>
+            </div>
+
+
+            <div class="test-box">
+
+                <div class="question">
+
+                    <p class="question-number">
+                        Question 01
+                    </p>
+
+                    <h3>
+                        Which data structure follows the
+                        LIFO principle?
+                    </h3>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Queue
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Stack
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Linked List
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Tree
+                    </label>
+
+                </div>
+
+
+                <div class="question">
+
+                    <p class="question-number">
+                        Question 02
+                    </p>
+
+                    <h3>
+                        What is the main purpose of an algorithm?
+                    </h3>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        To store only images
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        To solve a problem step by step
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        To design a webpage
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        To create a database
+                    </label>
+
+                </div>
+
+
+                <button class="primary-button">
+                    Submit Test
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- One Line Revision -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <p class="label">FINAL REVISION</p>
+
+                <h2>One-Line Answers</h2>
+
+                <p>
+                    Quickly recall the most important points.
+                </p>
+            </div>
+
+
+            <div class="answer-grid">
+
+                <div class="answer-card">
+                    <h3>Stack</h3>
+                    <p>
+                        A linear data structure that follows
+                        the LIFO principle.
+                    </p>
+                </div>
+
+
+                <div class="answer-card">
+                    <h3>Queue</h3>
+                    <p>
+                        A linear data structure that follows
+                        the FIFO principle.
+                    </p>
+                </div>
+
+
+                <div class="answer-card">
+                    <h3>Algorithm</h3>
+                    <p>
+                        A finite sequence of steps used to solve
+                        a specific problem.
+                    </p>
+                </div>
+
+
+                <div class="answer-card">
+                    <h3>Binary Tree</h3>
+                    <p>
+                        A tree in which each node has at most
+                        two children.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h3>StudyMate</h3>
+
+        <p>
+            A simple study planning and revision interface
+            for students.
+        </p>
+
+        <p class="copyright">
+            HTML & CSS Practice Project — Day 13
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
