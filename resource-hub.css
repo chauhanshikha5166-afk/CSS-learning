@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #252525;
+}
+
+
+/* Main Layout */
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 230px;
+    background-color: #20242b;
+    color: white;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.tagline {
+    color: #aeb3ba;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    color: #c9cdd2;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav .active {
+    background-color: #343a43;
+    color: white;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 25px;
+    color: #8e949c;
+    font-size: 12px;
+}
+
+
+/* Main Content */
+
+.main-content {
+    margin-left: 230px;
+    width: calc(100% - 230px);
+    max-width: 1200px;
+    padding: 30px 45px;
+}
+
+
+/* Top Bar */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #777777;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.topbar h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.profile-icon {
+    width: 38px;
+    height: 38px;
+    background-color: #20242b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Welcome */
+
+.welcome-box {
+    background-color: #20242b;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.welcome-box h2 {
+    margin: 5px 0 10px;
+}
+
+.welcome-box p {
+    color: #c5c8cc;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: white;
+    color: #20242b;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #eeeeee;
+}
+
+
+/* Sections */
+
+section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    color: #777777;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+
+/* Progress */
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.progress-card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top h3 {
+    margin: 0;
+}
+
+.card-top span {
+    font-size: 13px;
+    color: #666666;
+}
+
+.progress-bar {
+    height: 7px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin: 15px 0 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #20242b;
+    border-radius: 10px;
+}
+
+.progress.html {
+    width: 90%;
+}
+
+.progress.css {
+    width: 45%;
+}
+
+.progress.javascript {
+    width: 10%;
+}
+
+.progress-card p {
+    color: #777777;
+    font-size: 12px;
+}
+
+
+/* Subjects */
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.subject-card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 22px;
+    transition: transform 0.2s;
+}
+
+.subject-card:hover {
+    transform: translateY(-3px);
+}
+
+.subject-number {
+    color: #888888;
+    font-size: 12px;
+}
+
+.subject-card h3 {
+    margin: 12px 0 8px;
+}
+
+.subject-card p {
+    color: #666666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.subject-card a {
+    color: #20242b;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+/* Recent Topics */
+
+.topic-list {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.topic:last-child {
+    border-bottom: none;
+}
+
+.topic h3 {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.topic p {
+    margin: 0;
+    color: #777777;
+    font-size: 12px;
+}
+
+.status {
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+.completed {
+    background-color: #e8eee9;
+}
+
+.revision {
+    background-color: #eeeeee;
+}
+
+.learning {
+    background-color: #e8e8e8;
+}
+
+
+/* Resources */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.resource {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: #252525;
+}
+
+.resource:hover {
+    border-color: #999999;
+}
+
+.resource strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.resource span {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+        padding: 25px;
+    }
+
+    .progress-grid,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .layout {
+        display: block;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .welcome-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topic {
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
