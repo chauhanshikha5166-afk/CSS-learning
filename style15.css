@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeae3;
+    color: #292929;
+}
+
+
+/* Main Container */
+
+main {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Introduction */
+
+.intro {
+    max-width: 650px;
+    margin: 90px 0 55px;
+}
+
+.label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+.intro h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin: 18px 0;
+}
+
+.description {
+    color: #666666;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Secret Card */
+
+.secret-card {
+    height: 330px;
+    background-color: #292929;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Card Number */
+
+.number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+
+/* Front */
+
+.card-front {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.card-front h2 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.card-front p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+/* Hidden Message */
+
+.hidden-message {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #d8d1c5;
+    color: #292929;
+
+    transition: bottom 0.4s ease;
+}
+
+.hidden-message span {
+    font-size: 13px;
+    color: #777777;
+}
+
+.hidden-message h2 {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.hidden-message p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+
+/* Hover Effect */
+
+.secret-card:hover .hidden-message {
+    bottom: 0;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin: 70px 0 40px;
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h1 {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main {
+        width: 90%;
+    }
+
+    .intro {
+        margin-top: 60px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+}
