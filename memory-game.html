@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="memory-style.css">
+</head>
+<body>
+
+    <header>
+        <div class="heading">
+            <h1>♡ Memory Match</h1>
+            <p>Flip the cards and find matching pairs!</p>
+        </div>
+        <p class="tagline">Small games...<br>big happiness!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="score">
+            <div class="score-box">
+                <h3>☆ Moves</h3>
+                <p>0</p>
+            </div>
+
+            <div class="score-box time">
+                <h3>◷ Time</h3>
+                <p>00:00</p>
+            </div>
+
+            <div class="score-box restart-box">
+                <button type="button" onclick="location.reload()">
+                    ↻ Restart
+                </button>
+            </div>
+        </section>
+
+        <section class="game-board">
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍓</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🌼</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🐱</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍓</span></div>
+
+            <div class="card"><span class="heart">♥</span><span class="hidden">🌙</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🐱</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">⭐</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🌼</span></div>
+
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍀</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🌙</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍀</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">⭐</span></div>
+
+            <div class="card"><span class="heart">♥</span><span class="hidden">🎈</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍉</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🎈</span></div>
+            <div class="card"><span class="heart">♥</span><span class="hidden">🍉</span></div>
+        </section>
+
+        <section class="instructions">
+            <h2>☼ How to Play?</h2>
+            <p>1. Click on a card to flip it.</p>
+            <p>2. Find the matching pair.</p>
+            <p>3. Try to complete all pairs!</p>
+            <h3>Good Luck! ♡</h3>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Day 22 CSS Practice</p>
+        <span>♥</span>
+    </footer>
+
+</body>
+</html>
