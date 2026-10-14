@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="R-P-S.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p>Choose your move and play with the computer!</p>
+        </header>
+
+        <section class="score-board">
+            <div class="score">
+                <p>You</p>
+                <h2 id="user-score">0</h2>
+            </div>
+
+            <div class="score">
+                <p>Computer</p>
+                <h2 id="computer-score">0</h2>
+            </div>
+        </section>
+
+        <h2 class="choose">Choose Your Move</h2>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock">
+                ✊
+                <span>Rock</span>
+            </button>
+
+            <button class="choice" data-choice="paper">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button class="choice" data-choice="scissors">
+                ✌️
+                <span>Scissors</span>
+            </button>
+        </div>
+
+        <div class="result-box">
+            <h2 id="result">Let's Play!</h2>
+            <p id="details">Your result will appear here.</p>
+        </div>
+
+        <button id="reset">Play Again</button>
+
+        <footer>Day 23 CSS Practice</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
