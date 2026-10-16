@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef7fb;
+    color: #34495e;
+}
+
+.container {
+    width: 85%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+header {
+    text-align: center;
+    background-color: #d8eff9;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+header h1 {
+    color: #247ba0;
+}
+
+header p {
+    color: #58758a;
+}
+
+.goal-card,
+.tracker,
+.tips {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.goal-card {
+    text-align: center;
+    border-top: 4px solid #58b8d8;
+}
+
+.amount {
+    font-size: 27px;
+    font-weight: bold;
+    color: #247ba0;
+    margin: 12px 0;
+}
+
+.small-text {
+    color: #777;
+    font-size: 14px;
+}
+
+.tracker h2,
+.tips h2 {
+    color: #247ba0;
+}
+
+.progress-bar {
+    height: 14px;
+    background-color: #e2edf2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0 20px;
+}
+
+.progress {
+    width: 37.5%;
+    height: 100%;
+    background-color: #48b4d5;
+    border-radius: 10px;
+}
+
+.glasses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.glass {
+    width: 45px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b8dce9;
+    border-radius: 6px 6px 12px 12px;
+    background-color: #f2faff;
+    font-size: 22px;
+}
+
+.glass.filled {
+    background-color: #d1f0fa;
+    border-color: #58b8d8;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #edf8fc;
+    border-left: 4px solid #58b8d8;
+    line-height: 1.5;
+}
+
+.tips li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    color: #718797;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .glass {
+        width: 38px;
+        height: 48px;
+    }
+
+    .goal-card,
+    .tracker,
+    .tips {
+        padding: 15px;
+    }
+}
